@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZiMo.MallPay", "ZiMo.MallPay\ZiMo.MallPay.csproj", "{6FA1D4D1-273A-4F1F-BC45-1471271805C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "ZiMo.MallPay\App.csproj", "{6FA1D4D1-273A-4F1F-BC45-1471271805C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{9374973D-2FC9-4A30-B697-A9EEB2032530}"
 EndProject
