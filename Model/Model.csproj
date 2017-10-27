@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9374973D-2FC9-4A30-B697-A9EEB2032530}</ProjectGuid>
+    <ProjectGuid>d911bc5d-ee97-49d9-8ca9-1e0bfc2fe76a</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Model</RootNamespace>
@@ -30,103 +30,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System"/>
+    
+    <Reference Include="System.Core"/>
+    <Reference Include="System.Xml.Linq"/>
+    <Reference Include="System.Data.DataSetExtensions"/>
+    
+    
+    <Reference Include="Microsoft.CSharp"/>
+    
+    <Reference Include="System.Data"/>
+    
+    <Reference Include="System.Net.Http"/>
+    
+    <Reference Include="System.Xml"/>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Model/DTO/\sysdiagrams.cs">
-      <Link>sysdiagrams.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_Consumer.cs">
-      <Link>Sys_Consumer.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_ConsumerActive.cs">
-      <Link>Sys_ConsumerActive.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_ConsumerScore.cs">
-      <Link>Sys_ConsumerScore.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_Employee.cs">
-      <Link>Sys_Employee.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_Enterprise.cs">
-      <Link>Sys_Enterprise.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_EnterpriseConsumer_Rela.cs">
-      <Link>Sys_EnterpriseConsumer_Rela.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_EnterpriseOrgazation_Rela.cs">
-      <Link>Sys_EnterpriseOrgazation_Rela.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_EnterpriseSystemUser.cs">
-      <Link>Sys_EnterpriseSystemUser.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_Good.cs">
-      <Link>Sys_Good.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_GoodsCategory.cs">
-      <Link>Sys_GoodsCategory.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_GoodsCategory_Rela.cs">
-      <Link>Sys_GoodsCategory_Rela.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_GoodsPropertyOption_Rela.cs">
-      <Link>Sys_GoodsPropertyOption_Rela.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_GoodsProperty_Rela.cs">
-      <Link>Sys_GoodsProperty_Rela.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_GoodsSku.cs">
-      <Link>Sys_GoodsSku.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_Order.cs">
-      <Link>Sys_Order.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_OrderItem_Rela.cs">
-      <Link>Sys_OrderItem_Rela.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_Orgazation.cs">
-      <Link>Sys_Orgazation.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_OrgazationEmployee_Rela.cs">
-      <Link>Sys_OrgazationEmployee_Rela.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_OrgazationGoods_Rela.cs">
-      <Link>Sys_OrgazationGoods_Rela.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_OrgazationPayParamConfig.cs">
-      <Link>Sys_OrgazationPayParamConfig.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_PayChannel.cs">
-      <Link>Sys_PayChannel.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_QrCode.cs">
-      <Link>Sys_QrCode.cs</Link>
-    </Compile>
-    <Compile Include="..\Model/DTO/\Sys_QrCodeType.cs">
-      <Link>Sys_QrCodeType.cs</Link>
-    </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ModelAuto.ttinclude" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ModelTemplate.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ModelTemplate.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -135,4 +57,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-</Project>
+
+ </Project>
