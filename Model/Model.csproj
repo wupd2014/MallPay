@@ -40,87 +40,85 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModelTemplate.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
+    <Compile Include="..\Model/DTO/\sysdiagrams.cs">
+      <Link>sysdiagrams.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_Consumer.cs">
+      <Link>Sys_Consumer.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_ConsumerActive.cs">
+      <Link>Sys_ConsumerActive.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_ConsumerScore.cs">
+      <Link>Sys_ConsumerScore.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_Employee.cs">
+      <Link>Sys_Employee.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_Enterprise.cs">
+      <Link>Sys_Enterprise.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_EnterpriseConsumer_Rela.cs">
+      <Link>Sys_EnterpriseConsumer_Rela.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_EnterpriseOrgazation_Rela.cs">
+      <Link>Sys_EnterpriseOrgazation_Rela.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_EnterpriseSystemUser.cs">
+      <Link>Sys_EnterpriseSystemUser.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_Good.cs">
+      <Link>Sys_Good.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_GoodsCategory.cs">
+      <Link>Sys_GoodsCategory.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_GoodsCategory_Rela.cs">
+      <Link>Sys_GoodsCategory_Rela.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_GoodsPropertyOption_Rela.cs">
+      <Link>Sys_GoodsPropertyOption_Rela.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_GoodsProperty_Rela.cs">
+      <Link>Sys_GoodsProperty_Rela.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_GoodsSku.cs">
+      <Link>Sys_GoodsSku.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_Order.cs">
+      <Link>Sys_Order.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_OrderItem_Rela.cs">
+      <Link>Sys_OrderItem_Rela.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_Orgazation.cs">
+      <Link>Sys_Orgazation.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_OrgazationEmployee_Rela.cs">
+      <Link>Sys_OrgazationEmployee_Rela.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_OrgazationGoods_Rela.cs">
+      <Link>Sys_OrgazationGoods_Rela.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_OrgazationPayParamConfig.cs">
+      <Link>Sys_OrgazationPayParamConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_PayChannel.cs">
+      <Link>Sys_PayChannel.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_QrCode.cs">
+      <Link>Sys_QrCode.cs</Link>
+    </Compile>
+    <Compile Include="..\Model/DTO/\Sys_QrCodeType.cs">
+      <Link>Sys_QrCodeType.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sysdiagrams.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_Consumer.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_ConsumerActive.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_ConsumerScore.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_Employee.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_Enterprise.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_EnterpriseConsumer_Rela.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_EnterpriseOrgazation_Rela.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_EnterpriseSystemUser.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_Good.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_GoodsCategory.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_GoodsCategory_Rela.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_GoodsPropertyOption_Rela.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_GoodsProperty_Rela.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_GoodsSku.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_Order.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_OrderItem_Rela.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_Orgazation.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_OrgazationEmployee_Rela.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_OrgazationGoods_Rela.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_OrgazationPayParamConfig.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_PayChannel.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_QrCode.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sys_QrCodeType.cs">
-      <DependentUpon>ModelTemplate.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ModelAuto.ttinclude" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ModelTemplate.tt">
@@ -128,9 +126,7 @@
       <LastGenOutput>ModelTemplate.cs</LastGenOutput>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="ModelAuto.ttinclude" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
