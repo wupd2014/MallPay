@@ -4,12 +4,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{8D336756-2D28-487E-A029-3A1F13CB478E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{993ABB5C-881A-4A90-A322-FCB45B374C91} = {993ABB5C-881A-4A90-A322-FCB45B374C91}
+		{D911BC5D-EE97-49D9-8CA9-1E0BFC2FE76A} = {D911BC5D-EE97-49D9-8CA9-1E0BFC2FE76A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{6FA1D4D1-273A-4F1F-BC45-1471271805C1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8D336756-2D28-487E-A029-3A1F13CB478E} = {8D336756-2D28-487E-A029-3A1F13CB478E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{D911BC5D-EE97-49D9-8CA9-1E0BFC2FE76A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{993ABB5C-881A-4A90-A322-FCB45B374C91}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D911BC5D-EE97-49D9-8CA9-1E0BFC2FE76A} = {D911BC5D-EE97-49D9-8CA9-1E0BFC2FE76A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{8FC1A4C8-2145-4A19-B6AB-D591018041CE}"
 EndProject
