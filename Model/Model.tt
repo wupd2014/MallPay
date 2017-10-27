@@ -36,9 +36,9 @@ namespace My.Model
     SqlCommand command = new SqlCommand(selectQuery,conn);
     SqlDataAdapter ad = new SqlDataAdapter(command);
     System.Data.DataSet ds = new DataSet(); 
-    System.Data.DataTable schema = conn.GetSchema("Tables");
+    System.Data.DataRow[] schema = conn.GetSchema("Tables").Select("TABLE_NAME <>'sysdiagrams'");
 
-    foreach(System.Data.DataRow row in schema.Rows)
+    foreach(System.Data.DataRow row in  schema)
     {    
         ds.Tables.Clear();
         string tb_name = row["TABLE_NAME"].ToString();        
@@ -48,19 +48,24 @@ namespace My.Model
 
 #>
 
-    /// <summary>
-    /// 实体-<#=tb_name#> 
-    /// </summary>
     public partial class <#=tb_name#>    
     {    
         <#
-        PushIndent("          ");
+        PushIndent("         ");
         foreach (DataColumn dc in ds.Tables[0].Columns) 
         {
 			
-
-			WriteLine("//"+dc.Caption);
-            WriteLine("public " + dc.DataType.Name + (dc.AllowDBNull && dc.DataType.Name.ToLower() != "string" ? "? ": " ") + dc.ColumnName + " { get; set; }");
+			string Sl=" SELECT A.name AS table_name, B.name AS column_name, C.value AS column_description"
+					 +"	FROM sys.tables A"
+					 +"	INNER JOIN sys.columns B ON B.object_id = A.object_id"
+					 +"	LEFT JOIN sys.extended_properties C ON C.major_id = B.object_id AND C.minor_id = B.column_id"
+					 +"	WHERE A.name = '@tableName' and B.name='@columnName'";
+		    SqlCommand commandT = new SqlCommand(Sl.Replace("@tableName",tb_name).Replace("@columnName",dc.ColumnName),conn);
+			SqlDataAdapter adp=new SqlDataAdapter(commandT);
+			DataTable dt=new DataTable();
+			adp.Fill(dt);
+			WriteLine("//"+dt.Rows[0]["column_description"]);
+            WriteLine("public " + dc.DataType.Name + (dc.AllowDBNull && dc.DataType.Name.ToLower() != "string"? "? ": " ") + dc.ColumnName + " { get; set; }");
         }
         PopIndent();
         #>
