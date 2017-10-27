@@ -52,86 +52,86 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Model.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+    <Compile Include="DAL.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sys_ConsumerActiveDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_ConsumerDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_ConsumerScoreDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_EmployeeDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_EnterpriseConsumer_RelaDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_EnterpriseDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_EnterpriseOrgazation_RelaDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_EnterpriseSystemUserDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_GoodDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_GoodsCategoryDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_GoodsCategory_RelaDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_GoodsPropertyOption_RelaDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_GoodsProperty_RelaDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_GoodsSkuDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_OrderDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_OrderItem_RelaDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_OrgazationDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_OrgazationEmployee_RelaDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_OrgazationGoods_RelaDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_OrgazationPayParamConfigDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_PayChannelDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_QrCodeDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
     <Compile Include="Sys_QrCodeTypeDAL.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>DAL.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Model.tt">
+    <Content Include="DAL.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model.cs</LastGenOutput>
+      <LastGenOutput>DAL.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
