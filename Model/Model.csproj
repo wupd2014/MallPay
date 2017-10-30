@@ -49,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActionResult.cs" />
+    <Compile Include="Bookmark\BookMark.cs" />
+    <Compile Include="Bookmark\BookMarkTag.cs" />
+    <Compile Include="Bookmark\BookMark_Tag_Rela.cs" />
     <Compile Include="Manager1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
