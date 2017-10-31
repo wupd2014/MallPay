@@ -222,7 +222,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\AdminLTE-2.4.2\" />
-    <Folder Include="doc\融合支付\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
@@ -230,6 +229,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
+    <Content Include="doc\融合支付\聚合支付平台建设.doc" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <PropertyGroup>
