@@ -222,6 +222,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\AdminLTE-2.4.2\" />
+    <Folder Include="doc\融合支付\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
